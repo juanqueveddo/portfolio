@@ -1,0 +1,45 @@
+.title--sobremi {
+    color: white;
+    text-align: center;
+    margin-top: 6.5rem;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img--sobremi {
+    width: 250px;
+    filter: drop-shadow(0 0 10px #111);
+}
+
+.flex--sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+#bg--sobremi {
+    background-color: #222;
+    max-height: 400px;
+    padding: 40px 40px 420px 40px;
+    box-shadow: 0 0 10px black;
+    border-radius: 1%;
+}
+
+.subtitle--sobremi {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.info--sobremi {
+    color: rgb(155, 155, 155);
+    font-size: 20px;
+}
+
+span {
+    border-bottom: 1px solid grey;
+}

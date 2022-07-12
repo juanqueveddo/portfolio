@@ -1,0 +1,114 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    body {
+        margin: 0;
+        background: linear-gradient(rgb(29, 29, 29), rgb(15, 15, 15));
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        main {
+            flex: 1;
+
+            &.index {
+                display: grid;
+                place-content: center;
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/background.gif);
+                height: 100vh;
+                background-color: #111;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+/* CLASES */
+
+.bgfixed {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.centrar {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 75px;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
+.centrar-subtitulo {
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.bg-dark2 {
+    background-color: rgb(20, 20, 20);
+    padding-left: 20px;
+}
+
+.active {
+    color: white;
+}
+
+/* ANIMACIONES */
+
+.subtitulo--animado {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 15ch;
+
+    animation: typing 1.5s steps(20) infinite alternate, blink .5s infinite;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+/* SMARTPHONE */
+
+@media (max-width:480px) {
+    .centrar {
+        font-size: 60px;
+    }
+
+    .centrar-subtitulo {
+        margin-left: 70px;
+        font-size: 20px
+    }
+}
+
+/* TABLET */
+
+@media (min-width:481px) and (max-width:700px) {
+    .centrar {
+        font-size: 60px;
+    }
+
+    .centrar-subtitulo {
+        margin-left: 10px;
+        font-size: 25px
+    }
+}
