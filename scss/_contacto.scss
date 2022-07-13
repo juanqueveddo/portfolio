@@ -27,7 +27,7 @@ form {
         }
     }
 
-    button {
+    .button--contacto {
         background-color: #555;
         border: solid 1px #444;
         width: 400px;
@@ -100,5 +100,105 @@ form {
         color: #444;
         text-align: center;
         font-style: italic;
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+/* SMARTPHONE */
+
+@media (max-width:480px) {
+    .title--contacto {
+        @extend .title--sobremi;
+        margin-bottom: 20px;
+    }
+
+    .container--contacto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    form {
+        input {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 300px;
+            color: white;
+            height: 40px;
+            border-radius: 5%;
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .button--contacto {
+            background-color: #555;
+            border: solid 1px #444;
+            width: 20rem;
+            height: 40px;
+            color: #fff;
+            box-shadow: 0 0 5px #444;
+            margin-left: 2rem;
+
+            &:hover {
+                transition: all 0.5s;
+                background-color: #444;
+                box-shadow: 0 0 10px #222;
+            }
+        }
+
+        textarea {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 21rem;
+            height: 200px;
+            color: white;
+            resize: none;
+            border-radius: 2%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .hr1 {
+        display: none;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .img--redes {
+            margin-top: 30px;
+            width: 60px;
+        }
+
+        h3 {
+            display: none;
+        }
+
+        .hr--contacto {
+            display: none;
+            margin-top: 50px;
+            border-top: 2px solid grey;
+        }
+
+        h4 {
+            display: none;
+        }
     }
 }
