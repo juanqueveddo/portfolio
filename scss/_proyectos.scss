@@ -1,5 +1,5 @@
 .title--proyectos {
-    @extend .title--sobremi
+    @extend .title--sobremi;
 }
 
 .grid--proyectos {
@@ -85,6 +85,10 @@
     font-family: 'Merriweather';
 }
 
+.responsive--proyectos {
+    overflow-x: hidden;
+}
+
 /* RESPONSIVE DESIGN */
 
 /* NETBOOK */
@@ -94,6 +98,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
     }
 
     .contenedor {
@@ -135,11 +144,6 @@
 
     .responsive--proyectos {
         height: 50rem;
-    }
-
-    body {
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
 }
 
@@ -261,6 +265,11 @@
 
     .contenedor {
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
         display: flex;
         justify-content: center;
     }

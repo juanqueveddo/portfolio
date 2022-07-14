@@ -88,9 +88,24 @@
     margin-left: 70px;
     font-size: 20px;
   }
+  .overflow {
+    overflow-y: hidden;
+  }
 }
 /* TABLET */
 @media (min-width: 481px) and (max-width: 700px) {
+  .centrar {
+    font-size: 60px;
+  }
+  .centrar-subtitulo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1023px) {
+  .lowres {
+    height: 15rem;
+  }
   .centrar {
     font-size: 60px;
   }
@@ -605,6 +620,10 @@ footer {
   font-family: "Merriweather";
 }
 
+.responsive--proyectos {
+  overflow-x: hidden;
+}
+
 /* RESPONSIVE DESIGN */
 /* NETBOOK */
 @media (min-width: 1023px) and (max-width: 1366px) {
@@ -612,6 +631,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
   }
   .contenedor {
     width: 100%;
@@ -648,10 +671,6 @@ footer {
   }
   .responsive--proyectos {
     height: 50rem;
-  }
-  body {
-    overflow-x: hidden;
-    overflow-y: hidden;
   }
 }
 /* TABLET */
@@ -756,6 +775,10 @@ footer {
   }
   .contenedor {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
     display: flex;
     justify-content: center;
   }
