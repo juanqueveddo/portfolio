@@ -208,4 +208,331 @@ form {
             display: none;
         }
     }
+
+    body {
+        height: 70rem;
+        overflow-x: hidden;
+    }
+}
+
+/* TABLET */
+
+@media (min-width:481px) and (max-width:680px) {
+
+    .title--contacto {
+        margin-bottom: -50px;
+    }
+
+    .container--responsive {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container--contacto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        input {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 340px;
+            color: white;
+            height: 40px;
+            border-radius: 5%;
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .button--contacto {
+            background-color: #555;
+            border: solid 1px #444;
+            width: 20rem;
+            height: 40px;
+            color: #fff;
+            box-shadow: 0 0 5px #444;
+            margin-left: 2rem;
+
+            &:hover {
+                transition: all 0.5s;
+                background-color: #444;
+                box-shadow: 0 0 10px #222;
+            }
+        }
+
+        textarea {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 21rem;
+            height: 200px;
+            color: white;
+            resize: none;
+            border-radius: 2%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .hr1 {
+        display: none;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        .img--redes {
+            margin-top: 30px;
+            width: 60px;
+        }
+
+        h3 {
+            display: none;
+        }
+
+        .hr--contacto {
+            display: none;
+            margin-top: 50px;
+            border-top: 2px solid grey;
+        }
+
+        h4 {
+            display: none;
+        }
+    }
+
+    body {
+        height: 70rem;
+    }
+}
+
+@media (min-width:681px) and (max-width:1023px) {
+
+    .title--contacto {
+        margin-bottom: -50px;
+    }
+
+    .container--responsive {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container--contacto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        input {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 340px;
+            color: white;
+            height: 40px;
+            border-radius: 5%;
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .button--contacto {
+            background-color: #555;
+            border: solid 1px #444;
+            width: 20rem;
+            height: 40px;
+            color: #fff;
+            box-shadow: 0 0 5px #444;
+            margin-left: 2rem;
+
+            &:hover {
+                transition: all 0.5s;
+                background-color: #444;
+                box-shadow: 0 0 10px #222;
+            }
+        }
+
+        textarea {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 21rem;
+            height: 200px;
+            color: white;
+            resize: none;
+            border-radius: 2%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .hr1 {
+        display: none;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        .img--redes {
+            width: 60px;
+        }
+
+        h3 {
+            display: none;
+        }
+
+        .hr--contacto {
+            display: none;
+        }
+
+        h4 {
+            display: none;
+        }
+    }
+
+    body {
+        height: 75rem;
+    }
+}
+
+/* NETBOOK */
+
+@media (min-width:1024px) and (max-width:1366px) {
+    .title--contacto {
+        margin-bottom: 50px;
+    }
+
+    .container--contacto {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    form {
+        input {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 300px;
+            margin: 20px;
+            color: white;
+            height: 30px;
+            border-radius: 5%;
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .button--contacto {
+            background-color: #555;
+            border: solid 1px #444;
+            width: 300px;
+            height: 30px;
+            margin: 20px;
+            color: #fff;
+            box-shadow: 0 0 5px #444;
+
+            &:hover {
+                transition: all 0.5s;
+                background-color: #444;
+                box-shadow: 0 0 10px #222;
+            }
+        }
+
+        textarea {
+            background-color: #111;
+            border: solid 1px #444;
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+            color: white;
+            resize: none;
+            border-radius: 2%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .hr1 {
+        color: white;
+        margin: auto;
+        width: 50rem;
+        border-top: solid 2px grey;
+        margin-bottom: 50px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+
+        .img--redes {
+            margin-top: 30px;
+            width: 50px;
+        }
+
+        .card--redes {
+            color: #fff;
+        }
+
+        h3 {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+        .hr--contacto {
+            margin-top: 50px;
+            border-top: 2px solid grey;
+        }
+
+        h4 {
+            color: #444;
+            text-align: center;
+            font-style: italic;
+        }
+    }
 }

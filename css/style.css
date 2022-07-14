@@ -212,12 +212,12 @@ footer {
     color: rgb(155, 155, 155);
     font-size: 20px;
   }
-  body {
+  .body--responsive {
     height: 72rem;
   }
 }
 /* TABLET */
-@media (min-width: 481px) and (max-width: 1023px) {
+@media (min-width: 481px) and (max-width: 680px) {
   .title--sobremi, .title--contacto, .title--proyectos, .title--conocimientos {
     color: white;
     text-align: center;
@@ -271,8 +271,66 @@ footer {
     color: rgb(155, 155, 155);
     font-size: 20px;
   }
-  body {
+  .body--responsive {
     height: 70rem;
+  }
+}
+@media (min-width: 681px) and (max-width: 1023px) {
+  .title--sobremi, .title--contacto, .title--proyectos, .title--conocimientos {
+    color: white;
+    text-align: center;
+    margin-top: 6.5rem;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+  }
+  .responsive--sobremi {
+    background-color: #111;
+    width: 30rem;
+    padding: 20px;
+    margin-top: -2rem;
+    box-shadow: 0 0 10px black;
+    border-radius: 1%;
+  }
+  #bg--sobremi {
+    background-color: transparent;
+    max-height: 400px;
+    padding: 40px 40px 40px 40px;
+    box-shadow: 0 0 0px black;
+    border-radius: 1%;
+  }
+  .img--responsive {
+    display: flex;
+    margin: auto;
+    margin-top: 15rem;
+    width: 250px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #111);
+  }
+  .img--sobremi {
+    display: none;
+  }
+  .flex--sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  .subtitle--sobremi {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .info--sobremi {
+    color: rgb(155, 155, 155);
+    font-size: 20px;
+  }
+  .body--responsive {
+    height: 74rem;
   }
 }
 .card--conocimientos {
@@ -505,7 +563,7 @@ footer {
   }
 }
 /* TABLET */
-@media (min-width: 481px) and (max-width: 1023px) {
+@media (min-width: 481px) and (max-width: 680px) {
   .grid--proyectos {
     display: grid;
     grid-template-columns: 1fr;
@@ -547,8 +605,51 @@ footer {
   }
   .responsive--proyectos {
     height: 100rem;
+    overflow-x: hidden;
   }
-  body {
+}
+@media (min-width: 681px) and (max-width: 1023px) {
+  .grid--proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+  }
+  .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .square {
+    width: 380px;
+    height: 480px;
+    background: #111;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px #000;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin: auto;
+  }
+  .mask {
+    clip: rect(0px, 460px, 220px, 0px);
+    border-radius: 4px;
+    position: absolute;
+    margin: auto;
+    width: 380px;
+  }
+  #h1--responsive {
+    margin: auto;
+    text-align: left;
+    margin-top: 15rem;
+    padding-left: 30px;
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  .responsive--proyectos {
+    height: 100rem;
     overflow-x: hidden;
   }
 }
@@ -595,8 +696,6 @@ footer {
   }
   .responsive--proyectos {
     height: 100rem;
-  }
-  body {
     overflow-x: hidden;
   }
 }
@@ -773,6 +872,269 @@ form textarea::placeholder {
   }
   .redes h4 {
     display: none;
+  }
+  body {
+    height: 70rem;
+    overflow-x: hidden;
+  }
+}
+/* TABLET */
+@media (min-width: 481px) and (max-width: 680px) {
+  .title--contacto {
+    margin-bottom: -50px;
+  }
+  .container--responsive {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container--contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form input {
+    background-color: #111;
+    border: solid 1px #444;
+    width: 340px;
+    color: white;
+    height: 40px;
+    border-radius: 5%;
+  }
+  form input::placeholder {
+    padding-left: 5px;
+  }
+  form input:focus {
+    outline: none;
+  }
+  form .button--contacto {
+    background-color: #555;
+    border: solid 1px #444;
+    width: 20rem;
+    height: 40px;
+    color: #fff;
+    box-shadow: 0 0 5px #444;
+    margin-left: 2rem;
+  }
+  form .button--contacto:hover {
+    transition: all 0.5s;
+    background-color: #444;
+    box-shadow: 0 0 10px #222;
+  }
+  form textarea {
+    background-color: #111;
+    border: solid 1px #444;
+    width: 21rem;
+    height: 200px;
+    color: white;
+    resize: none;
+    border-radius: 2%;
+  }
+  form textarea:focus {
+    outline: none;
+  }
+  form textarea::placeholder {
+    padding-left: 5px;
+  }
+  .hr1 {
+    display: none;
+  }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .redes .img--redes {
+    margin-top: 30px;
+    width: 60px;
+  }
+  .redes h3 {
+    display: none;
+  }
+  .redes .hr--contacto {
+    display: none;
+    margin-top: 50px;
+    border-top: 2px solid grey;
+  }
+  .redes h4 {
+    display: none;
+  }
+  body {
+    height: 70rem;
+  }
+}
+@media (min-width: 681px) and (max-width: 1023px) {
+  .title--contacto {
+    margin-bottom: -50px;
+  }
+  .container--responsive {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container--contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form input {
+    background-color: #111;
+    border: solid 1px #444;
+    width: 340px;
+    color: white;
+    height: 40px;
+    border-radius: 5%;
+  }
+  form input::placeholder {
+    padding-left: 5px;
+  }
+  form input:focus {
+    outline: none;
+  }
+  form .button--contacto {
+    background-color: #555;
+    border: solid 1px #444;
+    width: 20rem;
+    height: 40px;
+    color: #fff;
+    box-shadow: 0 0 5px #444;
+    margin-left: 2rem;
+  }
+  form .button--contacto:hover {
+    transition: all 0.5s;
+    background-color: #444;
+    box-shadow: 0 0 10px #222;
+  }
+  form textarea {
+    background-color: #111;
+    border: solid 1px #444;
+    width: 21rem;
+    height: 200px;
+    color: white;
+    resize: none;
+    border-radius: 2%;
+  }
+  form textarea:focus {
+    outline: none;
+  }
+  form textarea::placeholder {
+    padding-left: 5px;
+  }
+  .hr1 {
+    display: none;
+  }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .redes .img--redes {
+    width: 60px;
+  }
+  .redes h3 {
+    display: none;
+  }
+  .redes .hr--contacto {
+    display: none;
+  }
+  .redes h4 {
+    display: none;
+  }
+  body {
+    height: 75rem;
+  }
+}
+/* NETBOOK */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .title--contacto {
+    margin-bottom: 50px;
+  }
+  .container--contacto {
+    display: flex;
+    justify-content: space-around;
+  }
+  form input {
+    background-color: #111;
+    border: solid 1px #444;
+    width: 300px;
+    margin: 20px;
+    color: white;
+    height: 30px;
+    border-radius: 5%;
+  }
+  form input::placeholder {
+    padding-left: 5px;
+  }
+  form input:focus {
+    outline: none;
+  }
+  form .button--contacto {
+    background-color: #555;
+    border: solid 1px #444;
+    width: 300px;
+    height: 30px;
+    margin: 20px;
+    color: #fff;
+    box-shadow: 0 0 5px #444;
+  }
+  form .button--contacto:hover {
+    transition: all 0.5s;
+    background-color: #444;
+    box-shadow: 0 0 10px #222;
+  }
+  form textarea {
+    background-color: #111;
+    border: solid 1px #444;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    color: white;
+    resize: none;
+    border-radius: 2%;
+  }
+  form textarea:focus {
+    outline: none;
+  }
+  form textarea::placeholder {
+    padding-left: 5px;
+  }
+  .hr1 {
+    color: white;
+    margin: auto;
+    width: 50rem;
+    border-top: solid 2px grey;
+    margin-bottom: 50px;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+  }
+  .redes .img--redes {
+    margin-top: 30px;
+    width: 50px;
+  }
+  .redes .card--redes {
+    color: #fff;
+  }
+  .redes h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .redes .hr--contacto {
+    margin-top: 50px;
+    border-top: 2px solid grey;
+  }
+  .redes h4 {
+    color: #444;
+    text-align: center;
+    font-style: italic;
   }
 }
 /* SCROLLBAR PERSONALIZADA */

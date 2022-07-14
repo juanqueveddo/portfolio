@@ -115,14 +115,14 @@
         font-size: 20px;
     }
 
-    body {
+    .body--responsive {
         height: 72rem;
     }
 }
 
 /* TABLET */
 
-@media (min-width:481px) and (max-width:1023px) {
+@media (min-width:481px) and (max-width:680px) {
 
     .title--sobremi {
         color: white;
@@ -185,7 +185,75 @@
         font-size: 20px;
     }
 
-    body {
+    .body--responsive {
         height: 70rem;
+    }
+}
+
+@media (min-width:681px) and (max-width:1023px) {
+
+    .title--sobremi {
+        color: white;
+        text-align: center;
+        margin-top: 6.5rem;
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 50px;
+    }
+
+    .responsive--sobremi {
+        background-color: #111;
+        width: 30rem;
+        padding: 20px;
+        margin-top: -2rem;
+        box-shadow: 0 0 10px black;
+        border-radius: 1%;
+    }
+
+    #bg--sobremi {
+        background-color: transparent;
+        max-height: 400px;
+        padding: 40px 40px 40px 40px;
+        box-shadow: 0 0 0px black;
+        border-radius: 1%;
+    }
+
+    .img--responsive {
+        display: flex;
+        margin: auto;
+        margin-top: 15rem;
+        width: 250px;
+        border-radius: 50%;
+        filter: drop-shadow(0 0 10px #111);
+    }
+
+    .img--sobremi {
+        display: none;
+    }
+
+    .flex--sobremi {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 4rem;
+    }
+
+    .subtitle--sobremi {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .info--sobremi {
+        color: rgb(155, 155, 155);
+        font-size: 20px;
+    }
+
+    .body--responsive {
+        height: 74rem;
     }
 }
