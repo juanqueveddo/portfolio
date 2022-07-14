@@ -784,6 +784,8 @@ footer {
   .container {
     display: flex;
     justify-content: center;
+    padding: 0px;
+    padding-bottom: 80px;
   }
   .square {
     width: 300px;
