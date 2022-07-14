@@ -696,16 +696,22 @@ form textarea::placeholder {
   .title--contacto {
     margin-bottom: 20px;
   }
+  .container--responsive {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
   .container--contacto {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   form input {
     background-color: #111;
     border: solid 1px #444;
-    width: 300px;
+    width: 340px;
     color: white;
     height: 40px;
     border-radius: 5%;
@@ -751,7 +757,7 @@ form textarea::placeholder {
   .redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 50px;
   }
   .redes .img--redes {
     margin-top: 30px;
