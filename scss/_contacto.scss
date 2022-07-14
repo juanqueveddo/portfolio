@@ -8,58 +8,19 @@
     justify-content: space-around;
 }
 
-form {
-    input {
-        background-color: #111;
-        border: solid 1px #444;
-        width: 400px;
-        margin: 20px;
-        color: white;
-        height: 30px;
-        border-radius: 5%;
+.button--contacto {
+    background-color: #555;
+    border: solid 1px #444;
+    width: 400px;
+    height: 40px;
+    margin: 20px;
+    color: #fff;
+    box-shadow: 0 0 5px #444;
 
-        &::placeholder {
-            padding-left: 5px;
-        }
-
-        &:focus {
-            outline: none;
-        }
-    }
-
-    .button--contacto {
-        background-color: #555;
-        border: solid 1px #444;
-        width: 400px;
-        height: 40px;
-        margin: 20px;
-        color: #fff;
-        box-shadow: 0 0 5px #444;
-
-        &:hover {
-            transition: all 0.5s;
-            background-color: #444;
-            box-shadow: 0 0 10px #222;
-        }
-    }
-
-    textarea {
-        background-color: #111;
-        border: solid 1px #444;
-        width: 400px;
-        height: 200px;
-        margin: 20px;
-        color: white;
-        resize: none;
-        border-radius: 2%;
-
-        &:focus {
-            outline: none;
-        }
-
-        &::placeholder {
-            padding-left: 5px;
-        }
+    &:hover {
+        transition: all 0.5s;
+        background-color: #444;
+        box-shadow: 0 0 10px #222;
     }
 }
 
@@ -102,6 +63,46 @@ form {
         font-style: italic;
     }
 }
+
+form {
+    input {
+        background-color: #111;
+        border: solid 1px #444;
+        width: 400px;
+        margin: 20px;
+        color: white;
+        height: 30px;
+        border-radius: 5%;
+
+        &::placeholder {
+            padding-left: 5px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        background-color: #111;
+        border: solid 1px #444;
+        width: 400px;
+        height: 200px;
+        margin: 20px;
+        color: white;
+        resize: none;
+        border-radius: 2%;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            padding-left: 5px;
+        }
+    }
+}
+
 
 /* RESPONSIVE DESIGN */
 
@@ -324,6 +325,8 @@ form {
     }
 }
 
+/* TABLET */
+
 @media (min-width:681px) and (max-width:1023px) {
 
     .title--contacto {
@@ -534,5 +537,14 @@ form {
             text-align: center;
             font-style: italic;
         }
+    }
+}
+
+/* PC BAJA RESOLUCION */
+
+@media (min-width:1024px) and (max-width:1400px) {
+    body {
+        height: 50rem;
+        overflow-y: scroll;
     }
 }

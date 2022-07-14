@@ -112,3 +112,25 @@
         font-size: 25px
     }
 }
+
+/* PC BAJA RESOLUCION */
+
+@media (min-width:1024px) and (max-width:1400px) {
+
+    .lowres {
+        height: 15rem;
+    }
+
+    .centrar {
+        font-size: 60px;
+    }
+
+    .centrar-subtitulo {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    .overflow {
+        overflow-y: hidden;
+    }
+}
